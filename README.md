@@ -45,6 +45,18 @@ A raiz do repositório contém os seguintes arquivos principais:
 - **`AirQualityUCI.csv`**: dataset bruto, contendo as leituras horárias dos sensores e das estações de referência.
 - **`projeto_final.ipynb`**: notebook Jupyter com a análise exploratória, o tratamento dos dados, o treinamento dos modelos e a avaliação dos resultados.
 
+## Instruções para Execução no Google Colab
+
+Para abrir e executar os testes deste projeto diretamente no seu navegador, siga os passos abaixo:
+
+1. Acesse o ambiente do [Google Colab]([https://colab.research.google.com/](https://colab.research.google.com/drive/1lpBryqWCRKIDNUhfn0UrHCJnngNPRsaP?usp=sharing)).
+2. Na janela inicial, selecione a aba **GitHub**.
+3. Cole a URL deste repositório na barra de pesquisa e pressione Enter.
+4. Clique no arquivo `projeto_final.ipynb` que aparecerá na lista para abri-lo.
+5. Com o notebook aberto, vá no menu superior e clique em **Runtime** (Ambiente de execução) > **Run all** (Executar tudo). 
+
+*Nota: O código já está configurado para baixar o dataset `AirQualityUCI.csv` automaticamente direto da nuvem, não sendo necessário realizar o upload manual de nenhum arquivo.*
+
 ---
 
 ## Análise Exploratória e Visualizações
@@ -95,6 +107,27 @@ Foram treinados e comparados quatro modelos, em ordem crescente de complexidade:
 | **Regressão Linear** | Modelo linear, avaliando a relação direta entre sensores e o alvo |
 | **Árvore de Decisão** | Modelo não-linear, capaz de capturar interações mais complexas entre as features |
 | **Random Forest** | Ensemble de árvores, buscando maior robustez e melhor generalização |
+
+---
+
+## Divisão das Contribuições
+
+O desenvolvimento deste projeto foi realizado de forma colaborativa, com a seguinte divisão principal de tarefas:
+
+* **Derek Marques Almeida:** Implementação da Árvore de Decisão revisão técnica do notebook e formatação da documentação final no repositório.
+* **Erick Oliveira da Silva:** Responsável pela Análise Exploratória de Dados (EDA), geração de gráficos de correlação e roteirização do vídeo.
+* **Guilherme Gois Araujo:** Implementação dos modelos Baseline e Regressão Linear, e cálculo das métricas de avaliação MAE e RMSE.
+
+---
+
+## Declaração de Uso de Ferramentas de IA
+
+Em conformidade com as diretrizes da disciplina, o grupo declara a utilização de modelos de linguagem no desenvolvimento deste trabalho:
+
+* **Ferramentas utilizadas:** Google Gemini e Anthropic Claude.
+* **Finalidade:** Apoio como tutor de estudos para estruturação do raciocínio lógico do pipeline de dados, resolução de erros de biblioteca (como falhas de leitura no Pandas) e auxílio na formatação do esqueleto textual em Markdown.
+* **Parte do trabalho em que foi utilizada:** Discussão sobre metodologias para prevenção de *Data Leakage*, entendimento do comportamento do sensor PT08.S2 e estruturação do documento `README.md`.
+* **Forma de verificação do conteúdo:** Nenhum código gerado foi incluído de forma cega. Todos os blocos sugeridos foram testados interativamente célula a célula, ajustando-se parâmetros e variáveis. As interpretações finais dos gráficos e das decisões de pré-processamento foram elaboradas pelos próprios integrantes, e a documentação textual revisada para refletir fielmente as saídas reais geradas no nosso ambiente Colab.
 
 ### Melhor Modelo
 
