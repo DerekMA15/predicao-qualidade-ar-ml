@@ -11,7 +11,7 @@
 
 - Derek Marques Almeida
 - Erick Oliveira da Silva
-- Guilherme Gois Araujo
+- Guilherme Góis Araujo
 
 
 ## Vídeo de Apresentação
